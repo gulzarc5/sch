@@ -96,11 +96,11 @@
                   </span>
                 </a>
               </div>
-            /div>
+            
         </div>
 
         <!-- Area Chart Example-->
-        <div class="card mb-3">
+        <div class="card mb-3 col-md-12">
             <div class="card-header">
               <i class="fas fa-chart-area"></i>
               Area Chart Example</div>
@@ -111,7 +111,7 @@
         </div>
 
         <!-- DataTables Example -->
-        <div class="card mb-3">
+        <div class="card mb-12 col-md-12">
             <div class="card-header">
               <i class="fas fa-table"></i>
               Data Table Example</div>
