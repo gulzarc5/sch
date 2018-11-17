@@ -1,22 +1,30 @@
-<!-- Bootstrap core JavaScript
+<script src="{{ asset('vendors/jquery/dist/jquery.min.js')}}"></script>
+    <script src="{{ asset('vendors/popper.js/dist/umd/popper.min.js')}}"></script>
+    <script src="{{ asset('vendors/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+    <script src="{{ asset('js/js/main.js')}}"></script>
 
-================================================= -->
 
- <!-- Bootstrap core JavaScript-->
-    <script src="{{ asset('jquery/jquery.min.js') }} "></script>
-    <script src="{{ asset('js/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('vendors/chart.js/dist/Chart.bundle.min.js')}}"></script>
+    <script src="{{ asset('js/js/dashboard.js')}}"></script>
+    <script src="{{ asset('js/js/widgets.js')}}assets/"></script>
+    <script src="{{ asset('vendors/jqvmap/dist/jquery.vmap.min.js')}}"></script>
+    <script src="{{ asset('vendors/jqvmap/examples/js/jquery.vmap.sampledata.js')}}"></script>
+    <script src="{{ asset('vendors/jqvmap/dist/maps/jquery.vmap.world.js')}}"></script>
+    <script>
+        (function($) {
+            "use strict";
 
-    <!-- Core plugin JavaScript-->
-    <script src="{{ asset('jquery-easing/jquery.easing.min.js') }}"></script>
-
-    <!-- Page level plugin JavaScript-->
-    <script src="{{ asset('chart.js/Chart.min.js') }}"></script>
-    <script src="{{ asset('datatables/jquery.dataTables.js') }}"></script>
-    <script src="{{ asset('datatables/dataTables.bootstrap4.js') }}"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="{{ asset('js/sb-admin.min.js') }}"></script>
-
-    <!-- Demo scripts for this page-->
-    <script src="{{ asset('js/demo/datatables-demo.js') }}"></script>
-    <script src="{{ asset('js/demo/chart-area-demo.js') }}"></script>
+            jQuery('#vmap').vectorMap({
+                map: 'world_en',
+                backgroundColor: null,
+                color: '#ffffff',
+                hoverOpacity: 0.7,
+                selectedColor: '#1de9b6',
+                enableZoom: true,
+                showTooltip: true,
+                values: sample_data,
+                scaleColors: ['#1de9b6', '#03a9f5'],
+                normalizeFunction: 'polynomial'
+            });
+        })(jQuery);
+    </script>

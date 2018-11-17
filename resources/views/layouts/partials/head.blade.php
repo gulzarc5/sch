@@ -1,19 +1,23 @@
-<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Sufee Admin - HTML5 Admin Template</title>
+    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>SB Admin - Dashboard</title>
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
 
-    <!-- Bootstrap core CSS-->
-    <link href="{{ asset('/css/css/bootstrap.min.css') }} " rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('vendors/bootstrap/dist/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('vendors/font-awesome/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('vendors/themify-icons/css/themify-icons.css')}}">
+    <link rel="stylesheet" href="{{ asset('vendors/flag-icon-css/css/flag-icon.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('vendors/selectFX/css/cs-skin-elastic.css')}}">
+    <link rel="stylesheet" href="{{ asset('vendors/jqvmap/dist/jqvmap.min.css')}}">
 
-    <!-- Custom fonts for this template-->
-    <link href="{{ asset('fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
 
-    <!-- Page level plugin CSS-->
-    <link href="{{ asset('datatables/dataTables.bootstrap4.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/css/style.css')}}">
 
-    <!-- Custom styles for this template-->
-    <link href="{{ asset('/css/css/sb-admin.css') }}" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+</head>

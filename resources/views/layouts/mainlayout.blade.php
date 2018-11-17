@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<!doctype html>
+<html class="no-js" lang="en">
  
    @include('layouts.partials.head')
  
  </head>
-<body id="page-top">
-	@include('layouts.partials.nav')
-<div id="wrapper">	 
+<body>
 	@include('layouts.partials.sidebar')
-	<div id="content-wrapper">
+	<div id="right-panel" class="right-panel">
+		@include('layouts.partials.nav') 
+	
 		@yield('content')
 		 
 		@include('layouts.partials.footer')
 	</div>
 	@include('layouts.partials.footer-scripts')
-</div>
+
  </body>
  
 </html>
