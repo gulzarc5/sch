@@ -4,7 +4,6 @@
  
    @include('layouts.partials.head')
  
- </head>
 <body>
 	@include('layouts.partials.sidebar')
 	<div id="right-panel" class="right-panel">

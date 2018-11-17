@@ -1079,7 +1079,7 @@ aside.left-panel {
         color: #c8c9ce !important;
         display: inline-block;
         font-family: 'Open Sans';
-        font-size: 14px;
+        font-size: 12px;
         line-height: 30px;
         padding: 10px 0;
         position: relative;
@@ -1091,7 +1091,7 @@ aside.left-panel {
           color: #8b939b;
           float: left;
           margin-top: 8px;
-          width: 55px;
+          width: 25px;
           text-align: left;
           z-index: 9; }
         .navbar .navbar-nav li > a .menu-title-text {
@@ -1125,7 +1125,7 @@ aside.left-panel {
           border: none;
           box-shadow: none;
           overflow-y: hidden;
-          padding: 0 0 0 35px; }
+          padding: 0 0 0 10px; }
           .navbar .navbar-nav li.menu-item-has-children .sub-menu li {
             position: relative; }
           .navbar .navbar-nav li.menu-item-has-children .sub-menu i {
