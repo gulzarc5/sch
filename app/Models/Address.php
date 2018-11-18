@@ -1,16 +1,16 @@
 <?php
 
-namespace App\models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Expenses extends Model
+class Address extends Model
 {
     use SoftDeletes;
-    protected $table = 'expenses';
+    protected $table = 'address';
    	protected $fillable = [
-        'expenses_id','transaction_id','exp_type','created_by',
+        'address_id','state_id','city_id','village_name','po','pin','ps','created_by',
     ];
     protected $dates = ['deleted_at'];
 }

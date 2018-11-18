@@ -1,16 +1,16 @@
 <?php
 
-namespace App\models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Deduction_salary extends Model
+class Mislleneous_fee extends Model
 {
     use SoftDeletes;
-    protected $table = 'deduction_salary';
+    protected $table = 'mislleneous_fee';
    	protected $fillable = [
-        'deduction_salary_id','amount','created_by',
+        'mislleneous_fee_id','std_id','transaction_id','fee_type_id','is_paid','created_by',
     ];
     protected $dates = ['deleted_at'];
 }

@@ -1,16 +1,15 @@
 <?php
 
-namespace App\models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Document extends Model
+class State extends Model
 {
     use SoftDeletes;
-    protected $table = 'document';
+    protected $table = 'state';
    	protected $fillable = [
-        'std_id','document_name','document_path','created_by',
-    ];
+        'state_id', 'state_name',];
     protected $dates = ['deleted_at'];
 }

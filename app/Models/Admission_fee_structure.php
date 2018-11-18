@@ -1,16 +1,16 @@
 <?php
 
-namespace App\models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Transaction_type extends Model
+class Admission_fee_structure extends Model
 {
     use SoftDeletes;
-    protected $table = 'transaction_type';
+    protected $table = 'admission_fee_structure';
    	protected $fillable = [
-        'transaction_type_id','transaction_type_name','created_by',
+        'fee_id','fee_type','amount','created_by',
     ];
     protected $dates = ['deleted_at'];
 }

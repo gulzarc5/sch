@@ -1,16 +1,16 @@
 <?php
 
-namespace App\models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Subject extends Model
+class Admission extends Model
 {
     use SoftDeletes;
-    protected $table = 'document';
+    protected $table = 'admission';
    	protected $fillable = [
-        'subject_id','class_id','subject_name','created_by',
+        'admission_id', 'std_id','admission_fee_id','year','created_by',
     ];
     protected $dates = ['deleted_at'];
 }

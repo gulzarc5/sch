@@ -1,16 +1,16 @@
 <?php
 
-namespace App\models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Prev_edu extends Model
+class Deduction_salary extends Model
 {
     use SoftDeletes;
-    protected $table = 'prev_edu';
+    protected $table = 'deduction_salary';
    	protected $fillable = [
-        'pre_edu_id','class','pass_year','created_by',
+        'deduction_salary_id','amount','created_by',
     ];
     protected $dates = ['deleted_at'];
 }
