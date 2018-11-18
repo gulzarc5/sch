@@ -18,6 +18,7 @@ class CreateStudentTable extends Migration
             $table->string('std_id')->unique();
             $table->string('std_name');
             $table->string('class_id');
+            $table->string('medium_id');
             $table->string('parent_id');
             $table->string('address_id');
             $table->string('pre_edu_id');

@@ -10,7 +10,7 @@ class Marksheet_details extends Model
     use SoftDeletes;
     protected $table = 'marksheet_details';
    	protected $fillable = [
-        'marksheet_details_id','marksheet_id','subject_id','marks','pass_marks','total_marks','percentage','grade','created_by',
+        'marksheet_details_id','marksheet_id','medium_id','class_id','subject_id','marks','pass_marks','total_marks','percentage','grade','created_by',
     ];
     protected $dates = ['deleted_at'];
 }

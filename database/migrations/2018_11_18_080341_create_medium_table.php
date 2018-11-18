@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAttendanceTable extends Migration
+class CreateMediumTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,10 @@ class CreateAttendanceTable extends Migration
      */
     public function up()
     {
-        Schema::create('attendance', function (Blueprint $table) {
+        Schema::create('medium', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('attendance_id')->unique();
-            $table->string('std_id');
-            $table->string('medium_id');
-            $table->string('class_id');
-            $table->string('t_id');
-            for($i = 1; $i <= 31; $i++)
-                $table->string($i);   
-            $table->string('month');
-            $table->integer('year');
+            $table->string('medium_id')->unique();
+            $table->string('medium_name');
             $table->string('created_by');
             $table->timestamps();
             $table->softDeletes();
@@ -37,6 +30,6 @@ class CreateAttendanceTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('attendance');
+        Schema::dropIfExists('medium');
     }
 }

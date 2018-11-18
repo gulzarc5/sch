@@ -16,6 +16,7 @@ class CreateExaminationTable extends Migration
         Schema::create('examination', function (Blueprint $table) {
             $table->increments('id');
             $table->string('examination_id')->unique();
+            $table->string('medium_id');
             $table->string('class_id');
             $table->string('examination_name');
             $table->string('examination_type_id'); 

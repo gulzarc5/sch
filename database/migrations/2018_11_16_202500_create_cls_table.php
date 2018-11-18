@@ -17,6 +17,7 @@ class CreateClsTable extends Migration
             $table->increments('id');
             $table->string('class_id')->unique();
             $table->string('class_name');
+            $table->string('medium_id');
             $table->string('created_by');
             $table->timestamps();
             $table->softDeletes();

@@ -10,7 +10,7 @@ class Cls extends Model
     use SoftDeletes;
     protected $table = 'cls';
    	protected $fillable = [
-        'class_id','class_name','created_by',
+        'class_id','class_name','medium_id','created_by',
     ];
     protected $dates = ['deleted_at'];
 }

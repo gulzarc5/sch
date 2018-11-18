@@ -16,6 +16,7 @@ class CreateSubjectTable extends Migration
         Schema::create('subject', function (Blueprint $table) {
             $table->increments('id');
             $table->string('subject_id')->unique();
+            $table->string('medium_id');
             $table->string('class_id');
             $table->string('subject_name');
             $table->string('created_by');

@@ -10,7 +10,7 @@ class Schedule extends Model
     use SoftDeletes;
     protected $table = 'schedule';
    	protected $fillable = [
-        'schedule_id','examination_id','subject_id','created_by',
+        'schedule_id','medium_id','class_id','examination_id','subject_id','created_by',
     ];
     protected $dates = ['deleted_at'];
 }

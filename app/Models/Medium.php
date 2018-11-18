@@ -5,12 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Subject extends Model
+class Medium extends Model
 {
     use SoftDeletes;
-    protected $table = 'document';
+    protected $table = 'medium';
    	protected $fillable = [
-        'subject_id','medium_id','class_id','subject_name','created_by',
+        'medium_id','medium_name','created_by',
     ];
     protected $dates = ['deleted_at'];
 }
