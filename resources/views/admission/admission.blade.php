@@ -22,51 +22,63 @@
 
         <div class="row" style="margin: 0px; padding: 0px;">
             <div class="col-sm-12 col-xs-12">
-                <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                {{ Form::open(['url' => 'foo/bar', 'method' => 'post', 'files' => true] ,[ 'class' => 'form-horizontal']) }}
+                <!-- <form action="" method="post" enctype="multipart/form-data" class="form-horizontal"> -->
                     <div class="card">
                         <div class="card-header">
                             <strong>New Admission</strong>
                         </div>
                         
                         <div class="card-body card-block">
+
                             <div class="row form-group">
                                 <div class="col col-md-3">
-                                    <label for="select" class=" form-control-label">Select Class</label>
+                                    {{ Form::label('select_medium', 'Select medium', ['class' => 'form-control-label']) }}
                                 </div>
                                 <div class="col-12 col-md-9">
-                                    <select name="select" id="select" class="form-control">
-                                        <option value="0">Please select</option>
-                                        <option value="1">Option #1</option>
-                                        <option value="2">Option #2</option>
-                                        <option value="3">Option #3</option>
-                                    </select>
+                                    {{ Form::select('select_medium', array('L' => 'Large', 'S' => 'Small'), null, ['class'=>'form-control', 'placeholder' => 'Select a Medium']) }}
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    {{ Form::label('select_class', 'Select Class', ['class' => 'form-control-label']) }}
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    {{ Form::select('select_class', array('L' => 'Large', 'S' => 'Small'), null, ['class'=>'form-control', 'placeholder' => 'Select a class']) }}
                                 </div>
                             </div>
                                            
                             <div class="row form-group">
                                 <div class="col col-md-3">
-                                    <label class=" form-control-label">Subjects for this student</label>
+                                    {{ Form::label('subjects', 'Subjects for this student', ['class' => 'form-control-label']) }}
+                                    <!-- <label class=" form-control-label">Subjects for this student</label> -->
                                 </div>
                                 <div class="col-12 col-md-9">
-                                    <p class="form-control-static">English , Bengali, Hindi ,</p>
+                                    {{ Form::text('subjects', null, [ 'class'=>'form-control', 'disabled' => 'disabled']) }}
+                                    <!-- <p class="form-control-static">English , Bengali, Hindi ,</p> -->
                                 </div>
                             </div>
 
                             <div class="row form-group">
                                 <div class="col col-md-3">
-                                    <label for="text-input" class=" form-control-label">Student Number</label>
+                                    {{ Form::label('student_id', 'Student Number', ['class' => 'form-control-label']) }}
+                                    <!-- <label for="text-input" class=" form-control-label">Student Number</label> -->
                                 </div>
                                 <div class="col-12 col-md-9">
-                                    <input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control">
+                                     {{ Form::text('student_id', null, [ 'class'=>'form-control', 'disabled' => 'disabled']) }}
+                                    <!-- <input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control"> -->
                                 </div>
                             </div>
 
                             <div class="row form-group">
                                 <div class="col col-md-3">
-                                    <label for="text-input" class=" form-control-label">Monthly Tution Fee</label>
+                                    {{ Form::label('monthly_tution_fee', 'Monthly Tution Fee', ['class' => 'form-control-label']) }}
+                                    <!-- <label for="text-input" class=" form-control-label">Monthly Tution Fee</label> -->
                                 </div>
                                 <div class="col-12 col-md-9">
-                                    <input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control">
+                                    {{ Form::text('monthly_tution_fee', null, [ 'class'=>'form-control', 'disabled' => 'disabled']) }}
+                                    <!-- <input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control"> -->
                                 </div>
                             </div>
                         </div>
@@ -80,47 +92,52 @@
                         <div class="card-body card-block">
                             <div class="row form-group">
                                 <div class="col col-md-3">
-                                    <label for="select" class=" form-control-label">Select Class</label>
+                                     {{ Form::label('tution_fee', 'Tution Fee', ['class' => 'form-control-label']) }}
                                 </div>
                                 <div class="col-12 col-md-9">
-                                    <select name="select" id="select" class="form-control">
-                                        <option value="0">Please select</option>
-                                        <option value="1">Option #1</option>
-                                        <option value="2">Option #2</option>
-                                        <option value="3">Option #3</option>
-                                    </select>
+                                    {{ Form::text('tution_fee', null, [ 'class'=>'form-control']) }}
                                 </div>
                             </div>
-                                           
                             <div class="row form-group">
                                 <div class="col col-md-3">
-                                    <label class=" form-control-label">Subjects for this student</label>
+                                     {{ Form::label('admission_fee', 'Admission Fee', ['class' => 'form-control-label']) }}
                                 </div>
                                 <div class="col-12 col-md-9">
-                                    <p class="form-control-static">English , Bengali, Hindi ,</p>
+                                    {{ Form::text('admission_fee', null, [ 'class'=>'form-control']) }}
                                 </div>
                             </div>
 
                             <div class="row form-group">
                                 <div class="col col-md-3">
-                                    <label for="text-input" class=" form-control-label">Student Number</label>
+                                     {{ Form::label('annual_funds', 'Annual Funds', ['class' => 'form-control-label']) }}
                                 </div>
                                 <div class="col-12 col-md-9">
-                                    <input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control">
+                                    {{ Form::text('annual_funds', null, [ 'class'=>'form-control']) }}
                                 </div>
                             </div>
 
                             <div class="row form-group">
                                 <div class="col col-md-3">
-                                    <label for="text-input" class=" form-control-label">Monthly Tution Fee</label>
+                                     {{ Form::label('practical_charges', 'Practical Charges', ['class' => 'form-control-label']) }}
                                 </div>
                                 <div class="col-12 col-md-9">
-                                    <input type="text" id="text-input" name="text-input" placeholder="Text" class="form-control">
+                                    {{ Form::text('practical_charges', null, [ 'class'=>'form-control']) }}
                                 </div>
                             </div>
+
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                     {{ Form::label('test_session_fee', 'Test Session Fee', ['class' => 'form-control-label']) }}
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    {{ Form::text('test_session_fee', null, [ 'class'=>'form-control']) }}
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                </form>
+                {{ Form::close() }}
+                <!-- </form> -->
             </div> 
                     
                     <div class="card-footer">
