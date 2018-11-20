@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
+
+
  
    @include('layouts.partials.head')
  
@@ -12,8 +13,9 @@
 		@yield('content')
 		 
 		@include('layouts.partials.footer')
+		@include('layouts.partials.footer-scripts')
 	</div>
-	@include('layouts.partials.footer-scripts')
+	
 
  </body>
  
