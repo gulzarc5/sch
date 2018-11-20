@@ -5,12 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Fee_type extends Model
+class Fee_catagory extends Model
 {
     use SoftDeletes;
-    protected $table = 'fee_type';
+    protected $table = 'fee_catagory';
    	protected $fillable = [
-        'fee_type_id','fee_type_name','created_by',
+        'fee_catagory_id','fee_catagory_name',
     ];
     protected $dates = ['deleted_at'];
 }

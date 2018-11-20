@@ -10,7 +10,7 @@ class Admission extends Model
     use SoftDeletes;
     protected $table = 'admission';
    	protected $fillable = [
-        'admission_id', 'std_id','admission_fee_id','year','created_by',
+        'admission_id','transaction_id', 'std_id','admission_type','is_paid','created_by',
     ];
     protected $dates = ['deleted_at'];
 }

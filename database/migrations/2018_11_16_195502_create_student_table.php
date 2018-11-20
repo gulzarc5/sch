@@ -23,6 +23,7 @@ class CreateStudentTable extends Migration
             $table->string('address_id');
             $table->string('pre_edu_id');
             $table->string('std_details_id');
+            $table->string('is_new');
             $table->string('created_by');
             $table->timestamps();
             $table->softDeletes();

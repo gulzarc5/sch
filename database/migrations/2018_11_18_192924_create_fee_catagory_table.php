@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFeeTypeTable extends Migration
+class CreateFeeCatagoryTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateFeeTypeTable extends Migration
      */
     public function up()
     {
-        Schema::create('fee_type', function (Blueprint $table) {
+        Schema::create('fee_catagory', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('fee_type_id')->unique();
-            $table->string('fee_type_name');
+            $table->string('fee_catagory_id')->unique();
+            $table->string('fee_catagory_name');
             $table->string('created_by');
             $table->timestamps();
             $table->softDeletes();
@@ -30,6 +30,6 @@ class CreateFeeTypeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('fee_type');
+        Schema::dropIfExists('fee_catagory');
     }
 }
