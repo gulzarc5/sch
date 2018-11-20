@@ -24,7 +24,7 @@
     {{Html::style('vendors/flag-icon-css/css/flag-icon.min.css')}}
     {{Html::style('vendors/selectFX/css/cs-skin-elastic.css')}}
     {{Html::style('vendors/jqvmap/dist/jqvmap.min.css')}}
-    {{Html::style('css/app.css')}}
+    <!-- {{Html::style('css/app.css')}} -->
     {{Html::style('css/css/style.css')}}
 
     <!-- <link rel="stylesheet" href="{!! asset('css/bootstrap.min.css') !!}"> -->
@@ -42,7 +42,7 @@
 {{ Html::script('vendors/jquery/dist/jquery-3.2.0.min.js') }}
 {{ Html::script('vendors/popper.js/dist/umd/popper.min.js') }}
 {{ Html::script('vendors/bootstrap/dist/js/bootstrap.min.js') }}
-{{ Html::script('vendors/bootstrap/dist/js/bootstrap.min.js') }}
+{{ Html::script('js/main.js') }}
     <!-- <script src="{!! asset('vendors/jquery/dist/jquery-3.2.0.min.js') !!}"></script> -->
     <!-- <script src="{!! asset('vendors/popper.js/dist/umd/popper.min.js') !!}"></script> -->
     <!-- <script src="{!! asset('vendors/bootstrap/dist/js/bootstrap.min.js') !!}"></script> -->
